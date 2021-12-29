@@ -146,7 +146,7 @@ nav ul li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-content: center;
-    margin: 25px 0;
+    margin-bottom: 25px;
 }
 
 .about-section-image {
