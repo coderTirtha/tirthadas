@@ -20,52 +20,88 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo-part">
-                <img src="images/favicon.png" alt="">
-                <h1>Tirtha Das</h1>
-            </div>
-            <ul>
-                <a href="">
-                    <li>Home</li>
-                </a>
-                <a href="">
-                    <li>Skills</li>
-                </a>
-                <a href="">
-                    <li>Projects</li>
-                </a>
-                <a href="">
-                    <li>Resume</li>
-                </a>
-                <a href="">
-                    <li>Contact</li>
-                </a>
-            </ul>
-            <div>
-                <i class="fas fa-cog"></i>
-            </div>
-        </nav>
-
+    <nav>
+        <div class="logo-part">
+            <img src="images/favicon.png" alt="">
+            <h1>Tirtha Das</h1>
+        </div>
+        <ul>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#about">
+                <li>About Me</li>
+            </a>
+            <a href="#skills">
+                <li>Skills</li>
+            </a>
+            <a href="#">
+                <li>Projects</li>
+            </a>
+            <a href="PDF's/MyResume.pdf" target="_blank">
+                <li>Resume</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+        </ul>
+        <div>
+            <i class="fas fa-cog"></i>
+        </div>
+    </nav>
+    <header id="home">
         <div class="top-banner">
             <div class="banner-text">
-                <div>
+                <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
                     <h3>Welcome!</h3>
                     <h1>I am <span>Tirtha Das</span></h1>
                     <h4>I am a Web Developer from Bangladesh</h4>
                     <p>Hey there! I am a web-developer from Bangladesh. <br> I have intermediate knowledge in HTML, CSS, Javascript. <br> I also have basic and fundamental knowledge in Jquery and <br> Node JS.</p>
+                    <a href="https://www.linkedin.com/in/tirthadas-developer/" target="_blank"><button>Hire Me   <i class="fab fa-telegram-plane"></i></button></a>
                 </div>
             </div>
-            <div class="banner-image">
+            <div class="banner-image" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1800">
                 <img src="images/Tirtha.png" alt="">
             </div>
-
         </div>
     </header>
 
     <main>
+        <section class="more-about-me" id="about">
+            <div class="section-heading">
+                <h1>More About Me</h1>
+            </div>
+            <div class="about-main-part">
+                <div class="about-section-image">
+                    <img src="images/Tirtha about.png" alt="">
+                </div>
+                <div class="about-text">
+                    <div>
+                        <h3><span>Hey there!</span> <br>I am a frontend developer from Bangladesh.</h3>
+                        <p>I have a strong front-end skill. I have a strong basic and fundamental knowledge in HTML, CSS, Javascript and Jquery. I also have basic knowledge about Node JS, Express JS and Mongo DB. I have completed my SSC from Chittagong Collegiate
+                            School in 2020. Now I am studying in Chittagong College and will pass my HSC on 2022.</p>
+                        <a href="PDF's/MyResume.pdf" target="_blank"><button>Download My Resume   <i class="fas fa-file-download"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="skills-section" id="skills">
+            <div class="section-heading">
+                <h1>My Top Skills</h1>
+            </div>
+            <div class="skills">
+                <div>
+                    <img src="images/HTML5.png" alt="">
+                    <img src="images/CSS3.png" alt="">
+                    <img src="images/Bootstrap.png" alt="">
+                </div>
+                <div>
+                    <img src="images/Javascript.png" alt="">
+                    <img src="images/Jquery.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>

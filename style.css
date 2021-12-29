@@ -42,7 +42,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+    padding: 1.2rem 3rem;
     background-color: transparent;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -110,11 +110,102 @@ nav ul li {
 }
 
 .banner-text div {
-    box-shadow: 1px 1px 5px black;
-    padding: 20px;
     border-radius: 10px;
 }
 
 .banner-text span {
     color: #ff4747;
+}
+
+.banner-text p {
+    padding-right: 25px;
+}
+
+.banner-text button {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.banner-text button:hover {
+    background-color: var(--secondary-shadow);
+}
+
+.section-heading h1 {
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.about-main-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    margin: 25px 0;
+}
+
+.about-section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-image img {
+    max-width: 350px;
+}
+
+.about-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.about-text h3 span {
+    color: var(--secondary-color);
+}
+
+.about-text button {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.about-text button:hover {
+    background-color: var(--primary-shadow);
+}
+
+.about-text button i {
+    margin-left: 10px;
+}
+
+.skills-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills-section img {
+    max-width: 140px;
+    border-radius: 5px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.skills-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px black;
+}
+
+.skills div {
+    margin: 10px 0;
 }
