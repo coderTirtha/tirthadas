@@ -275,3 +275,60 @@ nav ul li {
 .project button:hover {
     background-color: var(--primary-color);
 }
+
+.contact-section {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+footer h5 {
+    padding-top: 20px;
+}
+
+.footer-buttons button {
+    font-size: 25px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.footer-buttons button:hover {
+    transform: scale(1.2);
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter,
+.fa-linkedin-in,
+.fa-github,
+.fa-youtube {
+    transition: var(--transition);
+}
+
+.fa-facebook:hover {
+    color: #169FEE;
+}
+
+.fa-instagram:hover {
+    color: #ff4747;
+}
+
+.fa-twitter:hover {
+    color: #1A8CD8;
+}
+
+.fa-linkedin-in:hover {
+    color: #0A66C2;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+}
