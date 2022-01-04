@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 :root {
-    --font-family: "Roboto", sans-serf;
+    --font-family: 'Poppins', sans-serif;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
@@ -72,6 +72,27 @@ nav ul li {
     padding: 5px 10px;
 }
 
+.settings-menu {
+    padding: 1.2rem 3rem;
+    list-style-type: none;
+    font-weight: var(--bold-font);
+}
+
+.settings-menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-menu i {
+    font-size: 20px;
+}
+
+.fa-cog {
+    cursor: pointer;
+    font-size: 20px;
+}
+
 .logo-part {
     display: flex;
     align-items: center;
@@ -106,7 +127,9 @@ nav ul li {
 .banner-text {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    text-align: justify;
+    padding: 0 5rem;
 }
 
 .banner-text div {
@@ -127,6 +150,7 @@ nav ul li {
     border: none;
     color: white;
     padding: 10px 20px;
+    margin: 10px 0;
     font-size: 1rem;
     transition: .2s ease-in-out;
     cursor: pointer;
@@ -195,7 +219,7 @@ nav ul li {
 }
 
 .skills-section img {
-    max-width: 140px;
+    max-width: 135px;
     border-radius: 5px;
     transition: var(--transition);
     cursor: pointer;
@@ -208,4 +232,41 @@ nav ul li {
 
 .skills div {
     margin: 10px 0;
+}
+
+.all-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.project img {
+    max-width: 300px;
+}
+
+#channel-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.project-text p {
+    padding: 0 6.5rem;
+    text-align: justify;
+}
+
+.project button {
+    background-color: var(--primary-shadow);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.project button:hover {
+    background-color: var(--primary-color);
 }

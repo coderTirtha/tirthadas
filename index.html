@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $('document').ready(function() {
-
+            $('.settings-menu').hide();
         });
     </script>
 </head>
@@ -35,7 +35,7 @@
             <a href="#skills">
                 <li>Skills</li>
             </a>
-            <a href="#">
+            <a href="#projects">
                 <li>Projects</li>
             </a>
             <a href="PDF's/MyResume.pdf" target="_blank">
@@ -49,6 +49,12 @@
             <i class="fas fa-cog"></i>
         </div>
     </nav>
+    <ul class="settings-menu">
+        <li>
+            <span>Dark Theme</span>
+            <i class="fas fa-toggle-off"></i>
+        </li>
+    </ul>
     <header>
         <div class="top-banner">
             <div class="banner-text">
@@ -56,7 +62,7 @@
                     <h3>Welcome!</h3>
                     <h1>I am <span>Tirtha Das</span></h1>
                     <h4>I am a Web Developer from Bangladesh</h4>
-                    <p>Hey there! I am a web-developer from Bangladesh. <br> I have intermediate knowledge in HTML, CSS, Javascript. <br> I also have basic and fundamental knowledge in Jquery and <br> Node JS.</p>
+                    <p>Hey there! I am a web-developer from Bangladesh. I have intermediate knowledge in HTML, CSS, Javascript. I also have basic and fundamental knowledge in Jquery and Node JS.</p>
                     <a href="https://www.linkedin.com/in/tirthadas-developer/" target="_blank"><button>Hire Me   <i class="fab fa-telegram-plane"></i></button></a>
                 </div>
             </div>
@@ -92,13 +98,53 @@
             </div>
             <div class="skills">
                 <div>
-                    <img src="images/HTML5.png" alt="">
-                    <img src="images/CSS3.png" alt="">
-                    <img src="images/Bootstrap.png" alt="">
+                    <img src="images/Skills/HTML5.png" alt="">
+                    <img src="images/Skills/CSS3.png" alt="">
+                    <img src="images/Skills/Bootstrap.png" alt="">
                 </div>
                 <div>
-                    <img src="images/Javascript.png" alt="">
-                    <img src="images/Jquery.png" alt="">
+                    <img src="images/Skills/Javascript.png" alt="">
+                    <img src="images/Skills/Jquery.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="section-heading">
+                <h1>My Projects</h1>
+            </div>
+            <div class="all-projects">
+                <div class="project">
+                    <img src="images/Projects/Ninjamail.png" alt="">
+                    <div class="project-text">
+                        <h1>Ninjamail</h1>
+                        <p>Ninjamail is a demo project for a automate mail-processing company. You can contact them and will get a brief idea about them from this site.</p>
+                        <a href=""><button>See the project live <i class="fas fa-globe"></i></button></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/Projects/Coffee-House.png" alt="">
+                    <div class="project-text">
+                        <h1>Coffee-House</h1>
+                        <p>Coffee-House is a project for a Coffee-Shop. You can order your one from this site and Give them a review to improve more.</p>
+                        <a href=""><button>See the project live <i class="fas fa-globe"></i></button></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/Projects/Rewaz.png" alt="">
+                    <div class="project-text">
+                        <h1>Rewaz</h1>
+                        <p>Rewaz is a website for a educational institution. You can get a brief idea about that institution and Contact them from this site. You can also get admitted in that institution from here.</p>
+                        <a href=""><button>See the project live <i class="fas fa-globe"></i></button></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/Projects/TN's TABLA WORLD.png" alt="">
+                    <div class="project-text">
+                        <h1>TN's TABLA WORLD</h1>
+                        <p>TN's TABLA WORLD is a project made for my youtube channel. You will get a brief idea about our activity and videos here. You can check out the <a href="https://www.youtube.com/channel/UCamZnpgW9uSBhDSHQF09-6w" id="channel-link">channel here.</a></p>
+                        <a href=""><button>See the project live <i class="fas fa-globe"></i></button></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -113,6 +159,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
