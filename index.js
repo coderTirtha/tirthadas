@@ -8,4 +8,14 @@ $(window).scroll(function() {
 
 $('.fa-cog').click(function() {
     $('.settings-menu').toggle(300);
-})
+    $('.menu-items').hide(100);
+});
+
+$('.fa-toggle-off').click(function() {
+    $('.fa-toggle-off').toggleClass('fa-toggle-on');
+});
+
+$('.fa-bars').click(function() {
+    $('.menu-items').toggle(250);
+    $('.settings-menu').hide(100);
+});

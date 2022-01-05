@@ -15,6 +15,7 @@
     <script>
         $('document').ready(function() {
             $('.settings-menu').hide();
+            $('.menu-items').hide();
         });
     </script>
 </head>
@@ -25,27 +26,8 @@
             <img src="images/favicon.png" alt="">
             <h1>Tirtha Das</h1>
         </div>
-        <ul>
-            <a href="#">
-                <li>Home</li>
-            </a>
-            <a href="#about">
-                <li>About Me</li>
-            </a>
-            <a href="#skills">
-                <li>Skills</li>
-            </a>
-            <a href="#projects">
-                <li>Projects</li>
-            </a>
-            <a href="PDF's/MyResume.pdf" target="_blank">
-                <li>Resume</li>
-            </a>
-            <a href="#contact">
-                <li>Contact</li>
-            </a>
-        </ul>
-        <div>
+        <div class="responsive-menu">
+            <i class="fas fa-bars"></i>
             <i class="fas fa-cog"></i>
         </div>
     </nav>
@@ -55,14 +37,34 @@
             <i class="fas fa-toggle-off"></i>
         </li>
     </ul>
+    <ul class="menu-items">
+        <a href="#">
+            <li>Home</li>
+        </a>
+        <a href="#about">
+            <li>About Me</li>
+        </a>
+        <a href="#skills">
+            <li>Skills</li>
+        </a>
+        <a href="#projects">
+            <li>Projects</li>
+        </a>
+        <a href="PDF's/MyResume.pdf" target="_blank">
+            <li>Resume</li>
+        </a>
+        <a href="#contact">
+            <li>Contact</li>
+        </a>
+    </ul>
     <header>
         <div class="top-banner">
             <div class="banner-text">
                 <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="3000">
                     <h3>Welcome!</h3>
                     <h1>I am <span>Tirtha Das</span></h1>
-                    <h4>I am a Web Developer from Bangladesh</h4>
-                    <p>Hey there! I am a web-developer from Bangladesh. I have intermediate knowledge in HTML, CSS, Javascript. I also have basic and fundamental knowledge in Jquery and Node JS.</p>
+                    <h4>Hey there! I am a Web Developer from Bangladesh</h4>
+                    <p>I have intermediate knowledge in HTML, CSS, Javascript.</p>
                     <a href="https://www.linkedin.com/in/tirthadas-developer/" target="_blank"><button>Hire Me   <i class="fab fa-telegram-plane"></i></button></a>
                 </div>
             </div>
@@ -83,7 +85,7 @@
                 </div>
                 <div class="about-text">
                     <div>
-                        <h3><span>Hey there!</span> <br>I am a frontend developer from Bangladesh.</h3>
+                        <h3><span>Hey there!</span> <br>I am a frontend developer from Bangladesh</h3>
                         <p>I have a strong front-end skill. I have a strong basic and fundamental knowledge in HTML, CSS, Javascript and Jquery. I also have basic knowledge about Node JS, Express JS and Mongo DB. I have completed my SSC from Chittagong Collegiate
                             School in 2020. Now I am studying in Chittagong College and will pass my HSC on 2022.</p>
                         <a href="PDF's/MyResume.pdf" target="_blank"><button>Download My Resume   <i class="fas fa-file-download"></i></button></a>
@@ -168,12 +170,15 @@
             <a href="https://www.youtube.com/channel/UC9jXlux6tifYLomIL4Ql5PA" target="_blank"><button><i class="fab fa-youtube"></i></button></a>
         </div>
         <h5>© Copyright 2021-22 || All Rights Reserved || -Tirtha Das</h5>
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=d95d86a0-332e-4557-a2c7-10d8d1d15d11" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src="https://images.dmca.com/Badges/dmca_protected_sml_120l.png?ID=d95d86a0-332e-4557-a2c7-10d8d1d15d11" alt="DMCA.com Protection Status" /></a>
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=3e423afb-5afe-4b8b-b31b-48711d8d55f1" title="DMCA.com Protection Status" class="dmca-badge"> <img src="https://images.dmca.com/Badges/dmca-badge-w100-2x1-03.png?ID=3e423afb-5afe-4b8b-b31b-48711d8d55f1" alt="DMCA.com Protection Status" /></a>
         <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
         </script>
+        <h6>Version 1.0.2</h6>
     </footer>
 
+
     <script src="index.js"></script>
+    <script src="DarkMode.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

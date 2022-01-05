@@ -91,11 +91,42 @@ nav ul li {
 
 .settings-menu i {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .fa-cog {
     cursor: pointer;
     font-size: 20px;
+}
+
+.responsive-menu i {
+    font-weight: var(--bolder-font);
+    font-size: 20px;
+}
+
+.fa-bars {
+    margin-right: 2rem;
+}
+
+.menu-items {
+    text-align: center;
+    font-size: 18px;
+    position: sticky;
+    top: 5rem;
+    left: 0;
+    z-index: 2;
+}
+
+.menu-items li {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    transition: var(--transition);
+    padding: 0.3rem 0;
+}
+
+.menu-items li:hover {
+    background-color: var(--secondary-color);
 }
 
 .logo-part {
@@ -133,7 +164,6 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;
     padding: 0 5rem;
 }
 
@@ -147,6 +177,7 @@ nav ul li {
 
 .banner-text p {
     padding-right: 25px;
+    text-align: justify;
 }
 
 .banner-text button {
@@ -191,7 +222,9 @@ nav ul li {
 .about-text {
     display: flex;
     align-items: flex-end;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: justify;
+    padding-right: 5rem;
 }
 
 .about-text h3 span {
@@ -291,6 +324,10 @@ footer h5 {
     padding-top: 20px;
 }
 
+footer h6 {
+    color: #5d5d5d;
+}
+
 .footer-buttons button {
     font-size: 25px;
     padding: 5px 15px;
@@ -298,6 +335,7 @@ footer h5 {
     border-radius: 10px;
     transition: var(--transition);
     cursor: pointer;
+    margin: .5rem;
 }
 
 .footer-buttons button:hover {
@@ -331,4 +369,137 @@ footer h5 {
 
 .fa-youtube:hover {
     color: #ff0000;
+}
+
+.top-banner-dark {
+    background-color: #000000;
+    color: white;
+}
+
+.menu-items-dark li {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.settings-menu-dark {
+    background-color: black;
+    color: white;
+}
+
+.main-body {
+    background-color: black;
+    color: white;
+}
+
+.logo-part-dark h1 {
+    color: white;
+}
+
+@media screen and (max-width: 790px) {
+    nav {
+        padding: 0.5rem 1.5rem;
+    }
+    .settings-menu {
+        top: 4.1rem;
+    }
+    .menu-items {
+        top: 4.1rem;
+    }
+    .fa-bars {
+        display: block;
+        float: left;
+    }
+    .banner-text {
+        padding: 0 2rem;
+    }
+    .banner-image img {
+        max-width: 300px;
+    }
+    .about-main-part {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-text {
+        text-align: center;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+    .about-text p {
+        padding: 0 8rem;
+        text-align: justify;
+    }
+    .about-text h3 span {
+        font-size: 25px;
+    }
+    .about-section-image img {
+        max-width: 320px;
+    }
+    .contact-section iframe {
+        width: 550px;
+    }
+    .all-projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project-text p {
+        padding: 0 7rem;
+    }
+    .skills-section img {
+        max-width: 110px;
+    }
+    .section-heading h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .top-banner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-text {
+        text-align: center;
+        padding: 0 0.5rem;
+        margin-top: 20px;
+    }
+    .banner-text p {
+        text-align: center;
+    }
+    .contact-section iframe {
+        width: 380px;
+    }
+    .about-text h3 {
+        padding: 0 2rem;
+    }
+    .about-text p {
+        padding: 0 4rem;
+    }
+    .project-text p {
+        padding: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .contact-section iframe {
+        width: 350px;
+    }
+    .about-text p {
+        padding: 0 3rem;
+    }
+    .project-text p {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .contact-section iframe {
+        width: 300px;
+    }
+    .about-text p {
+        padding: 0 2.5rem;
+    }
+    .project-text p {
+        padding: 0 2.7rem;
+    }
+    .skills-section img {
+        max-width: 80px;
+    }
 }
